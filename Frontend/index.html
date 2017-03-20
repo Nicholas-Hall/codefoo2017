@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CodeFoo2017</title>
+<script src="jquery-3.1.1.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body class="body">
+    <div class="articlesOrVideos">
+        <div class="subHeader">
+            <div onclick="callApi('videos',10,true)" class="videoBtn">
+                <span >VIDEOS</span>
+            </div>
+            <div onclick="callApi('articles',10,true)" class="articleBtn">
+                <span >ARTICLES</span>
+            </div>
+        </div>
+        <div class="newestPosts">
+        </div>
+    </div>
+</body>
+
+<!-- http://ign-apis.herokuapp.com/articles?startIndex=0&count=1 -->
+<script src="frontend.js"></script>
+</html>

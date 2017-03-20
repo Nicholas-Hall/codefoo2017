@@ -1,0 +1,43 @@
+must Create posts table first as it has the Primary Key.
+
+CREATE TABLE `posts` (
+  `post_id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` enum('article','video') NOT NULL,
+  PRIMARY KEY (`post_id`)
+)
+
+CREATE TABLE `articles` (
+  `post_id` int(11) NOT NULL,
+  `headline` varchar(200) NOT NULL,
+  `subHeadline` varchar(200) DEFAULT NULL,
+  `slug` varchar(200) DEFAULT NULL,
+  `publishDate` char(24) DEFAULT NULL,
+  `state` enum('unpublished','published') DEFAULT NULL,
+  KEY `fk_post_article` (`post_id`),
+  CONSTRAINT `fk_post_article` FOREIGN KEY (`post_id`) REFERENCES `posts` (`post_id`)
+)
+
+CREATE TABLE `thumbnails` (
+  `post_id` int(11) NOT NULL,
+  `url` varchar(200) NOT NULL,
+  `size` varchar(10) NOT NULL,
+  `width` int(11) NOT NULL,
+  `height` int(11) NOT NULL,
+  KEY `fk_post_thumbnails` (`post_id`),
+  CONSTRAINT `fk_post_thumbnails` FOREIGN KEY (`post_id`) REFERENCES `posts` (`post_id`)
+)
+
+CREATE TABLE `videos` (
+  `post_id` int(11) NOT NULL,
+  `name` varchar(200) NOT NULL,
+  `description` varchar(200) DEFAULT NULL,
+  `duration` varchar(4) NOT NULL,
+  `url` varchar(200) DEFAULT NULL,
+  `slug` varchar(200) DEFAULT NULL,
+  `publishDate` char(24) DEFAULT NULL,
+  `state` enum('unpublished','published') DEFAULT NULL,
+  KEY `fk_post_videos` (`post_id`),
+  CONSTRAINT `fk_post_videos` FOREIGN KEY (`post_id`) REFERENCES `posts` (`post_id`)
+)
+
+You Can now run Backend.php to fill These Tables. Make sure to enter your address and credentials.

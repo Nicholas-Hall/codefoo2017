@@ -1,0 +1,215 @@
+body{
+    background-color: black;
+}
+
+@media screen and (max-width: 1259px)
+{
+    .articlesOrVideos
+    {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 1260px)
+{
+    .articlesOrVideos
+    {
+        font-size: 17px;
+    }
+}
+
+.articlesOrVideos{
+    min-width: 40em;
+    width: 40em;
+    margin:auto;
+    border-radius:5px;
+    font-size: 13px;
+    font-family: arial,sans-serif;
+    cursor: default;
+}
+.subHeader{
+    height: 4em;
+    background-color:white;
+}
+.videoBtn, .articleBtn{
+    text-align: center;
+    line-height: 2em;
+    width: 18.5em;
+    height: 2.25em;
+    margin-top: 1em;
+    border-top: 1px solid #bb1313;
+    border-bottom: 1px solid #bb1313;
+}
+
+.videoBtn:hover, .articleBtn:hover{
+}
+
+.videoBtn{
+    float:left;
+    margin-left: 1.5em;
+    border-radius: 2em 0 0 2em;
+    border-left: 1px solid #bb1313;
+}
+
+.articleBtn{
+    float:right;
+    margin-right: 1.5em;
+    margin-left: 0;
+    border-radius: 0 2em 2em 0;
+    border-right: 1px solid #bb1313;
+}
+
+.previousDiv{
+    background-color: white;
+    color: #646362;
+    height: 2em;
+}
+
+#previousText{
+    float: left;
+    margin-left: .5em;
+}
+
+#toTopText{
+    float: right;
+    margin-right: .5em;
+}
+.newestPosts{
+}
+
+.post{
+    border-bottom:1px solid #ccc;
+    background-color: white;
+    margin-top: 0;
+    height: 3.75em;
+    line-height: 2em;
+    font-weight: bold;
+    position: relative;
+}
+
+.blankDiv{
+    position: absolute;
+    left: -.5em;
+    top: .5em;
+    width: 1em;
+    height: 2.75em;
+    display: none;
+    background-color: #bb1313;
+}
+
+.post:hover{
+    background-color: #e3e3e3;
+}
+
+.post:hover .blankDiv{
+    overflow: visible;
+    display: block;
+}
+
+#lastPost{
+    border-bottom: none;
+}
+
+.seeMore{
+    background-color: white;
+    height: 2em;
+}
+#seeMoreText{
+    color: #9b9b9b;
+    margin-left: 40px;
+}
+
+.post .listCount{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: #646362;
+    width: 40px;
+    height: 4em;
+    line-height: 2.35em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.runTime{
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    color: #9b9b9b;
+    width: 40px;
+    height: 4em;
+    line-height: 4.65em;
+    text-align: center;
+    font-weight: bold;
+}
+.postDetails{
+    position: relative;
+}
+.postDetailsContentTop{
+    position: absolute;
+    top: .25em;
+    left: 41px;
+    line-height: 2em;
+    font-weight: bold;
+    font-size: 12px;
+    color: #646362;
+}
+
+.postDetailsContentBottom{
+    position:absolute;
+    top: 1.60em;
+    left: 41px;
+    line-height: 2em;
+    font-size: 12px;
+    color: #9b9b9b;
+}
+
+.postHide{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 37em;
+    height: 20em;
+    background-size: auto;
+    border: 3px solid white;
+    border-radius: 3px;
+    background-size: 37em 20em;
+    position: relative;
+}
+
+.ignTag{
+    text-decoration: none;
+    position: absolute;
+    font-size: 3em;
+    font-weight:800;
+    text-align: center;
+    background-color: #bb1313;
+    color: white;
+    width: 6.25em;
+    height: 1.4em;
+    line-height: 1.4em;
+    border-radius: .25em;
+    top: .5em;
+    right: .5em;
+}
+
+.ignTag:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.articleNameHidden{
+
+    position: absolute;
+    color: white;
+    width: 10.75;
+    float: left;
+    font-size: 2em;
+    margin-right: .5em;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    bottom: .5em;
+    left: .5em;
+
+}
