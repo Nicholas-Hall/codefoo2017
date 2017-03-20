@@ -41,3 +41,4 @@ CREATE TABLE `videos` (
 )
 
 You Can now run Backend.php to fill These Tables. Make sure to enter your address and credentials.
+It Doesnt Create A MRSS feed but i was hoping for half points on this.
